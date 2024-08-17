@@ -28,7 +28,7 @@ $secondary: #a0f669;
 }
 
 html {
-	// overflow-x: hidden;
+	overflow-x: hidden;
 }
 body {
 	font-family: $font-primary;
@@ -861,27 +861,35 @@ h1, h2, h3, h4, h5,
 }
 
 
-.resume-wrap{
-	width: 100%;
-	margin-bottom: 30px;
-	background: rgba(255,255,255,.1);
-	padding: 30px;
-	@include border-radius(5px);
-	.date{
-		font-weight: 900;
-		font-size: 26px;
-		color: $primary;
-	}
-	h2{
-		font-size: 26px;
-	}
-	.position{
-		font-size: 12px;
-		font-weight: 600;
-		letter-spacing: 3px;
-		text-transform: uppercase;
-	}
+.resume-wrap {
+    width: 100%;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 5px; /* Assuming you're using a CSS preprocessor like SCSS, this will work */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensures the .resume-wrap fills the container height */
 }
+
+.date {
+    font-weight: 900;
+    font-size: 26px;
+    color: $primary; /* This assumes you're using a CSS preprocessor with variables */
+}
+
+h2 {
+    font-size: 26px;
+}
+
+.position {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
 
 //SERVICES
 // .services{
